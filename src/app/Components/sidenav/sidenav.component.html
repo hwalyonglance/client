@@ -1,0 +1,27 @@
+<md-nav-list dense style="background-color: red">
+	<h3 md-subheaderclass="demo-secondary-text">Header Latihan</h3>
+	<ng-container *ngFor="let link of links; let io = index;">
+		<md-list-item style="border-bottom: 1px solid black">
+			<a md-line href="http://www.google.com">{{ link.name }} &lt;=&gt; {{ io }}</a>
+			<button md-icon-button (click)="link.show=!link.show">
+					<md-icon class="material-icons">info</md-icon>
+				</button>
+		</md-list-item>
+
+		<ng-container *ngIf="link.child !== undefined">
+			<md-nav-list [attr.data-app-list]="'anak-'+links[io].name" class="anak1" *ngIf="link.show">
+				<md-list-item *ngFor="let ilink of link.child; let ii = index" style="border-bottom: 1px solid black">
+					<a md-line href="http://www.google.com">
+							<i class="material-icons" style="color: red">chevron_right</i>
+							{{ ilink.name }} &lt;=&gt; {{ io }}-{{ ii }}
+						</a>
+					<!-- <button md-icon-button (click)="infoClicked=!infoClicked">
+							<md-icon class="material-icons">info</md-icon>
+						</button> -->
+					<!--  -->
+				</md-list-item>
+			</md-nav-list>
+		</ng-container>
+
+	</ng-container>
+</md-nav-list>
