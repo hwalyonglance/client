@@ -1,23 +1,45 @@
-md-list,
 md-nav-list {
-	border: 1px solid rgba(0, 0, 0, 0.12);
+	padding: 0 !important;
+}
+md-nav-list,
+md-list-item{
 	width: 100%;
 	margin: 0 !important;
+	padding: 0 !important;
 }
 h3{
-	border-bottom: 1px solid black;
-	font-size: .9em;
+	background-color: #888;
+	border-bottom: 1px solid #ddd;
+	color: #fff !important;
+	font-size: .85em;
+	height: 25px !important;
 	margin: 0 !important;
-	padding: 15px 0 !important;
-	width: 100%;
-	text-align: center;
+	padding: 5px 16px !important;
 }
-.demo-secondary-text {
-	color: rgba(0, 0, 0, 0.54);
+md-list-item.anak0,
+mat-list-item.anak0 {
+
+	border-bottom: 1px solid #ddd;
+	padding: 0 !important;
+	li, a, button{
+		margin: 0 !important;
+		padding: 0 !important;
+	}
 }
-md-nav-list.anak1{
+md-list-item.anak0.active,
+md-list-item.anak0.active {
+	background-color: blue !important;
+}
+
+md-list-item.anak0:hover,
+mat-list-item.anak0:hover {
+	background-color: red !important;
+
+}
+
+md-nav-list.anak1,
+mat-nav-list.anak1 {
 	background-color: green;
 	margin-top: 0 !important;
 	padding-top: 0 !important
 }
-

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
+import { MdSidenav } from '@angular/material';
 
 @Component({
 	selector: 'app-container',
@@ -6,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent implements OnInit {
-
-	constructor() { }
+	SMALL_WIDTH_BREAKPOINT = 700;
+	@ViewChild('mainsidenav') mainSideNav: MdSidenav;
+	constructor() {}
 
 	ngOnInit() {}
-
+	sideNavToggle(): void {
+		this.mainSideNav.toggle();
+	}
+	isScreenSmall(): boolean {
+		return window.matchMedia(`(max-width: ${this.SMALL_WIDTH_BREAKPOINT}px)`).matches;
+	}
+	haha(): void {
+		console.log('from haha');
+	}
 }

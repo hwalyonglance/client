@@ -1,8 +1,8 @@
 <md-sidenav-container id="main-container">
-	<md-sidenav #start2 opened mode="side" id="sidenav">
+	<md-sidenav #mainsidenav id="sidenav" [opened]="!isScreenSmall()" [mode]="isScreenSmall() ? 'over' : 'side'">
 		<app-sidenav></app-sidenav>
 	</md-sidenav>
 	<div id="container">
-		<button md-button (click)="start2.toggle()">Toggle Start Side Drawer</button>
+		<button md-button (click)="sideNavToggle()">Custom Toggle Side Drawer</button>
 	</div>
 </md-sidenav-container>

@@ -1,20 +1,20 @@
-<md-nav-list dense style="background-color: red">
-	<h3 md-subheaderclass="demo-secondary-text">Header Latihan</h3>
+<md-nav-list dense>
+	<h3 md-subheader>Header Latihan</h3>
 	<ng-container *ngFor="let link of links; let io = index;">
-		<md-list-item style="border-bottom: 1px solid black">
-			<a md-line href="http://www.google.com">{{ link.name }} &lt;=&gt; {{ io }}</a>
-			<button md-icon-button (click)="link.show=!link.show">
-					<md-icon class="material-icons">info</md-icon>
-				</button>
+		<md-list-item [title]="link.url"  class="anak0" [class.active]="link.url == activeList">
+			<a routerLink="{{link.url}}" routerLinkActive="active" md-line>{{ link.url }}</a>
+			<button md-icon-button (click)="link.show=!link.show" *ngIf="link.child">
+				<md-icon class="material-icons" *ngIf="!link.show">arrow_drop_down</md-icon>
+				<md-icon class="material-icons" *ngIf="link.show">arrow_drop_up</md-icon>
+			</button>
 		</md-list-item>
 
 		<ng-container *ngIf="link.child !== undefined">
-			<md-nav-list [attr.data-app-list]="'anak-'+links[io].name" class="anak1" *ngIf="link.show">
+			<md-nav-list class="anak1" *ngIf="link.show">
 				<md-list-item *ngFor="let ilink of link.child; let ii = index" style="border-bottom: 1px solid black">
-					<a md-line href="http://www.google.com">
-							<i class="material-icons" style="color: red">chevron_right</i>
-							{{ ilink.name }} &lt;=&gt; {{ io }}-{{ ii }}
-						</a>
+					<a md-line>
+						{{ ilink.name }}
+					</a>
 					<!-- <button md-icon-button (click)="infoClicked=!infoClicked">
 							<md-icon class="material-icons">info</md-icon>
 						</button> -->

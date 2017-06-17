@@ -1,13 +1,24 @@
-#main-container{
+#main-container {
 	margin-top: 64px;
-	min-height: 90.6vh;
+	height: 90vh;
 	#sidenav {
 		margin: 0 !important;
 		padding: 0 !important;
 		width: 200px;
+		min-height: 90.6vh;
 	}
-	#container{
+
+	#container {
 		background-color: greenyellow;
 		padding: 20px;
+	}
+}
+
+@media (max-width: 601px) {
+	#main-container {
+		margin-top: 56px !important;
+		#sidenav{
+			width: 80%;
+		}
 	}
 }
