@@ -7,19 +7,24 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import 'hammerjs';
 
-import { AppService } from './Services/AppService/app.service';
+import { AppService } from './Services/app/app.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ContainerComponent } from './Components/container/container.component';
 import { SidenavComponent } from './Components/sidenav/sidenav.component';
-
+import { AuthComponent } from './Components/auth/auth.component';
+import { NavComponent } from './Components/nav/nav.component';
+import { FooterComponent } from './Components/footer/footer.component';
 @NgModule({
 	declarations: [
 		AppComponent,
 		HomeComponent,
 		ContainerComponent,
 		SidenavComponent,
+		AuthComponent,
+		NavComponent,
+		FooterComponent,
 	],
 	imports: [
 		BrowserModule,

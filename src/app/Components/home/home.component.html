@@ -1,16 +1,3 @@
-<nav>
-	<div class="demo-toolbar">
-		<p>
-			<md-toolbar color="primary">
-				<md-icon (click)="sideNavToggle()" class="demo-toolbar-icon">menu</md-icon>
-				<span>Primary Toolbar</span>
-
-				<span class="demo-fill-remaining"></span>
-
-				<md-icon>code</md-icon>
-			</md-toolbar>
-		</p>
-	</div>
-</nav>
-
+<app-nav (sideNavToggle)="sideNavToggle()"></app-nav>
 <app-container></app-container>
+<app-footer></app-footer>

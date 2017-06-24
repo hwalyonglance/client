@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../../Services/AppService/app.service';
 @Component({
 	selector: 'app-sidenav',
 	templateUrl: './sidenav.component.html',
@@ -22,11 +21,7 @@ export class SidenavComponent implements OnInit {
 			{ name: 'Baz', url: 'none/baz'}
 		]},
 	];
-	constructor(app: AppService) {
-		this.activeList = window.location.pathname.replace('/inbox/', '');
-		console.log(this.activeList);
-		console.log(app);
-	}
+	constructor() {}
 	ngOnInit() {}
 
 }

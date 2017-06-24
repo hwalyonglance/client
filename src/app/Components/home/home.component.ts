@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit, AfterViewChecked, ViewChild} from '@angular/core';
 import { ContainerComponent } from '../container/container.component';
-
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',

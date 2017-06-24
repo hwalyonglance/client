@@ -40,18 +40,14 @@ import 'classlist.js';  // Run `npm install --save classlist.js`.
 /** IE10 and IE11 requires the following to support `@angular/animation`. */
 import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
-
 /** Evergreen browsers require these. **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
-
 
 /***************************************************************************************************
  * Zone JS is required by Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
-
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
@@ -66,7 +62,6 @@ import 'intl';  // Run `npm install --save intl`.
  * Need to import at least one locale-data with intl.
  */
 import 'intl/locale-data/jsonp/en';
-
 
 import 'jquery/dist/jquery.min.js';
 import 'materialize-css/dist/js/materialize.min.js';

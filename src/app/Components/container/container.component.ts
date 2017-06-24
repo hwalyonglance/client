@@ -10,15 +10,11 @@ export class ContainerComponent implements OnInit {
 	SMALL_WIDTH_BREAKPOINT = 700;
 	@ViewChild('mainsidenav') mainSideNav: MdSidenav;
 	constructor() {}
-
 	ngOnInit() {}
 	sideNavToggle(): void {
 		this.mainSideNav.toggle();
 	}
 	isScreenSmall(): boolean {
 		return window.matchMedia(`(max-width: ${this.SMALL_WIDTH_BREAKPOINT}px)`).matches;
-	}
-	haha(): void {
-		console.log('from haha');
 	}
 }
