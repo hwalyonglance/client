@@ -1,1 +1,0 @@
-> cd src && typings install node express body-parser serve-static express-serve-static-core mime --save --global # --ambient # w/o --save --global

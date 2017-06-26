@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { APP_SHELL_DIRECTIVES, IS_PRERENDER } from '@angular/app-shell';
+// import { IS_PRERENDER } from '@angular/app-shell';
 
 @Component({
 	selector: 'app-root',
@@ -8,9 +8,9 @@ import { APP_SHELL_DIRECTIVES, IS_PRERENDER } from '@angular/app-shell';
 })
 export class AppComponent {
 	title = 'app';
-	constructor(@Inject(IS_PRERENDER) isPrerender: boolean) {
-		if ( !isPrerender ) {
-			// fetch some data
-		}
-	}
+	// constructor(@Inject(IS_PRERENDER) isPrerender: boolean) {
+	// 	if ( !isPrerender ) {
+	// 		// fetch some data
+	// 	}
+	// }
 }
