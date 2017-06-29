@@ -31,8 +31,15 @@ import { FooterComponent } from './Components/footer/footer.component';
 		FooterComponent,
 	],
 	imports: [
-		AppRoutingModule, BrowserAnimationsModule, BrowserModule, FlexLayoutModule,
-		FormsModule, ReactiveFormsModule, MaterialModule, NoopAnimationsModule, RouterModule
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		BrowserModule,
+		FlexLayoutModule,
+		FormsModule,
+		ReactiveFormsModule,
+		MaterialModule,
+		NoopAnimationsModule,
+		RouterModule
 	],
 	providers: [
 		AppService

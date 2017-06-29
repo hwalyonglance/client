@@ -35,7 +35,7 @@
 // import 'core-js/es6/set';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-import 'classlist.js';  // Run `npm install --save classlist.js`.
+// import 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /** IE10 and IE11 requires the following to support `@angular/animation`. */
 /** ALL Firefox browsers require the following to support `@angular/animation`. **/
@@ -62,4 +62,4 @@ import 'intl';  // Run `npm install --save intl`.
  */
 import 'intl/locale-data/jsonp/en';
 // import 'jquery/dist/jquery.min.js';
-// import 'materialize-css/dist/js/materialize.min.js';
+// import 'materialize-css/bin/materialize.min.js';
